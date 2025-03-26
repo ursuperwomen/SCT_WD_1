@@ -1,2 +1,2 @@
 # SCT_WD_1
-responsive landing page
+built responsive landing page using HTML, CSS, Javascript
