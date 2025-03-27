@@ -1,0 +1,355 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #090909;
+    line-height: 1.6;
+}
+
+header {
+    position: fixed; /* Fix the header at the top */
+    top: 0; /* Position it at the top */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+    background-color: #090909; /* Blue */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+/* Add padding to the body to prevent content from being hidden behind the fixed header */
+body {
+    padding-top: 80px; /* Adjust this value based on the height of your header */
+}
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #57ff9d; /* Yellow on hover */
+}
+
+/* Hero Section */
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #f6f2f6, #2c023b); /* Gradient background */
+    color: white;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    animation: fadeIn 2s ease-in-out; /* Fade-in animation */
+}
+
+/* Motive Section */
+.motive {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between columns */
+    max-width: 1000px;
+    margin: 0 auto 30px;
+    animation: slideIn 1.5s ease-in-out; /* Slide-in animation */
+}
+
+.motive-item {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Equal width for all columns */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.motive-item:hover {
+    transform: translateY(-10px); /* Lift the box on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.motive-item h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #e6e4dc; /* Yellow color for headings */
+}
+
+.motive-item p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #f0f0f0; /* Light text color */
+}
+
+.motive-item strong {
+    color: #f5f2e8; /* Highlight color for keywords */
+}
+
+/* Button */
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ffdd57; /* Yellow */
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ffcc00; /* Darker yellow */
+    transform: scale(1.1); /* Slightly enlarge */
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #fffdf6; /* Yellow */
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #f9f8fa; /* Darker yellow */
+    transform: scale(1.1); /* Slightly enlarge */
+}
+
+/* Courses Section */
+/* Why Learn Container */
+.why-learn-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between the two sections */
+    margin: 40px 0; /* Space above and below */
+}
+
+.why-learn-arabic {
+    background-color: #000000; /* White background */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    width: 48%; /* Adjust width to fit side by side */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.why-learn-arabic:hover {
+    transform: translateY(-5px); /* Lift the box on hover */
+    box-shadow: 0 8px 16px rgba(236, 228, 228, 0.2); /* Enhanced shadow on hover */
+}
+
+.why-learn-arabic h3 {
+    font-size: 1.8em; /* Slightly larger heading */
+    margin-bottom: 15px;
+    color: #e9d8eb; /* Blue color for the heading */
+}
+
+.why-learn-arabic p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 15px; /* Space below the paragraph */
+    color: #f6e0e0; /* Dark text color */
+}
+
+.why-learn-arabic ul {
+    list-style-type: disc; /* Use disc bullets */
+    padding-left: 20px; /* Indent the list */
+}
+
+.why-learn-arabic ul li {
+    font-size: 1em;
+    color: #e0c1c1; /* Light text color */
+    margin-bottom: 10px; /* Space between list items */
+}
+.courses {
+    padding: 40px 20px;
+    background: #ffffff; /* Light background for contrast */
+    text-align: center;
+    margin: 40px 0; /* Space above and below the courses section */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.courses h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #101111; /* Blue color for the heading */
+}
+
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between course items */
+}
+
+.course-item {
+    background: rgb(0, 0, 0);
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px;
+    width: 300px; /* Fixed width for each course item */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.course-item:hover {
+    transform: translateY(-10px); /* Lift the card on hover */
+    box-shadow: 0 8px 16px rgba(105, 76, 76, 0.2); /* Enhanced shadow on hover */
+}
+
+.course-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #dcc8c8; /* Dark text color */
+}
+
+.course-item p {
+    font-size: 1em;
+    color: #f0e3e3; /* Light text color */
+    line-height: 1.5;
+}
+/* Contact Us Section */
+.contact {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #080808, #0f0f0f); /* Gradient background */
+    color: white;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    animation: fadeIn 2s ease-in-out; /* Fade-in animation */
+}
+
+.social-media {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between icons */
+}
+
+.social-media li {
+    display: inline-block;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em; /* Increased font size for better visibility */
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease; /* Transition for color and transform */
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+}
+
+.social-media a:hover {
+    color: #ffdd57; /* Change text color on hover */
+    transform: translateY(-5px); /* Lift the icon on hover */
+}
+
+/* Icons for Social Media */
+.social-media a::before {
+    font-family: "Font Awesome 5 Free"; /* Use Font Awesome for icons */
+    font-weight: 900;
+    font-size: 1.5em; /* Icon size */
+}
+
+.social-media a[href*="whatsapp"] {
+    content: "\f232"; /* WhatsApp icon */
+}
+
+.social-media a[href*="instagram"] {
+    content: "\f16d"; /* Instagram icon */
+}
+
+.social-media a[href*="youtube"] {
+    content: "\f167"; /* YouTube icon */
+}
+
+.social-media a[href*="facebook"] {
+    content: "\f09a"; /* Facebook icon */
+}
+
+.social-media a[href*="twitter"] {
+    content: "\f099"; /* Twitter icon */
+}
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #524e4e;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Shadow at the top */
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+    animation: fadeIn 2s ease-in-out; /* Fade-in animation */
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
